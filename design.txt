@@ -1,0 +1,49 @@
+Install:
+- Download Node.js
+        # installs fnm (Fast Node Manager)
+        winget install Schniz.fnm
+
+        # configure fnm environment
+        fnm env --use-on-cd | Out-String | Invoke-Expression
+
+        # download and install Node.js
+        fnm use --install-if-missing 22
+
+        # verifies the right Node.js version is in the environment
+        node -v # should print `v22.11.0`
+
+        # verifies the right npm version is in the environment
+        npm -v # should print `10.9.0`
+
+        IMPORTANT: you must install using powershell
+
+Create React App
+npx create-react-app networking-app
+
+cd networking-app
+
+npm start
+# this starts the development server, and you should see your react app running in 
+http://localhost:3000
+
+
+Success! Created networking-app at C:\Users\ana_melissa\OneDrive\Desktop\Understanding Wireshark\Understanding-Wireshark\networking-app
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd networking-app
+  npm start
