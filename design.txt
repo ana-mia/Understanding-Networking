@@ -22,6 +22,9 @@ npx create-react-app networking-app
 
 cd networking-app
 
+# this is to navigate between different chapters
+npm install react-router-dom
+
 npm start
 # this starts the development server, and you should see your react app running in 
 http://localhost:3000
